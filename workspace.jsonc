@@ -63,6 +63,7 @@
         "@teambit/react.mounter": "1.0.3",
         "@teambit/react.react-env": "1.0.38",
         "@teambit/typescript.typescript-compiler": "2.0.16",
+        "classnames": "^2.5.1",
         "eslint": "^7.28.0"
       },
       "peerDependencies": {}
