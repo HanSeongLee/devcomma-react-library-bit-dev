@@ -1,0 +1,15 @@
+@import "devcomma-react-library/ui/styles/utils";
+
+.container {
+  max-width: 311px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media(">tablet") {
+    max-width: 573px;
+  }
+
+  @include media(">desktop") {
+    max-width: 1110px;
+  }
+}
