@@ -59,6 +59,9 @@ importers:
       graphql:
         specifier: 15.8.0
         version: 15.8.0
+      include-media:
+        specifier: ^2.0.0
+        version: 2.0.0
       jest:
         specifier: 29.3.1
         version: 29.3.1(@types/node@12.20.4)
@@ -71,6 +74,9 @@ importers:
       react-router-dom:
         specifier: 6.8.1
         version: 6.8.1(react-dom@18.2.0)(react@18.2.0)
+      sass:
+        specifier: ^1.71.1
+        version: 1.71.1
     devDependencies:
       '@teambit/envs.docs.env-overview-template':
         specifier: 0.0.2
@@ -12555,6 +12561,10 @@ packages:
     engines: {node: '>=0.8.19'}
     dev: false
 
+  /include-media@2.0.0:
+    resolution: {integrity: sha512-LSJcffPYIZ/Kln0rIi5UhqQbZxElDCMYA4dPC5MI1rkwwjptgEiOicHnzB0MMhMNJver0+4zULb4MKlgDyapZg==}
+    dev: false
+
   /indent-string@4.0.0:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
     engines: {node: '>=8'}
@@ -16505,6 +16515,16 @@ packages:
 
   /sass@1.63.6:
     resolution: {integrity: sha512-MJuxGMHzaOW7ipp+1KdELtqKbfAWbH7OLIdoSMnVe3EXPMTmxTmlaZDCTsgIpPCs3w99lLo9/zDKkOrJuT5byw==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.5
+      source-map-js: 1.0.2
+    dev: false
+
+  /sass@1.71.1:
+    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
