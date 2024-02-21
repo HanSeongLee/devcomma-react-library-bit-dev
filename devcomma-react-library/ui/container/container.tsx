@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import styles from './style.module.scss';
 import cn from 'classnames';
+import styles from './style.module.scss';
 
 export type ContainerProps = {
     className?: string;
