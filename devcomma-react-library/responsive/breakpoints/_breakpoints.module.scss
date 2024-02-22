@@ -1,0 +1,12 @@
+@import 'include-media';
+
+$breakpoints: (mobile: 568px, tablet: 767px, desktop: 1339px);
+$mobile: map-get($breakpoints, mobile);
+$tablet: map-get($breakpoints, tablet);
+$desktop: map-get($breakpoints, desktop);
+
+:export {
+  mobile: $mobile;
+  tablet: $tablet;
+  desktop: $desktop;
+}

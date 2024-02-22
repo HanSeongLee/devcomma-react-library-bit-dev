@@ -16,19 +16,19 @@
         "mainFile": "index.ts",
         "rootDir": "devcomma-react-library/envs/my-react-env"
     },
+    "responsive/breakpoints": {
+        "name": "responsive/breakpoints",
+        "scope": "jkhanseong.devcomma-react-library",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "devcomma-react-library/responsive/breakpoints"
+    },
     "ui/container": {
         "name": "ui/container",
-        "scope": "",
-        "version": "",
-        "defaultScope": "jkhanseong.devcomma-react-library",
+        "scope": "jkhanseong.devcomma-react-library",
+        "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "devcomma-react-library/ui/container",
-        "config": {
-            "jkhanseong.devcomma-react-library/envs/my-react-env": {},
-            "teambit.envs/envs": {
-                "env": "jkhanseong.devcomma-react-library/envs/my-react-env"
-            }
-        }
+        "rootDir": "devcomma-react-library/ui/container"
     },
     "$schema-version": "17.0.0"
 }
