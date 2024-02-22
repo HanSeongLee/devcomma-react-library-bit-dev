@@ -78,7 +78,8 @@
   },
   "teambit.generator/generator": {
     "envs": [
-      "jkhanseong.devcomma-react-library/envs/my-react-env"
+      "jkhanseong.devcomma-react-library/envs/my-react-env",
+      "teambit.html/html-env",
     ]
   }
 }
