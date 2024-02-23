@@ -5,11 +5,25 @@
   width: 100%;
   margin: 0 auto;
 
+  @include media("<tablet") {
+    &.disableMobile {
+      max-width: initial;
+    }
+  }
+
   @include media(">tablet") {
     max-width: 573px;
+
+    &.disableTablet {
+      max-width: initial;
+    }
   }
 
   @include media(">desktop") {
     max-width: 1110px;
+
+    &.disableDesktop {
+      max-width: initial;
+    }
   }
 }
