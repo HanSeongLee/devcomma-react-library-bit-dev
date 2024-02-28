@@ -1,7 +1,7 @@
 @import "@jkhanseong/devcomma-react-library.responsive.breakpoints/_breakpoints.module.scss";
 
 .container {
-  max-width: 311px;
+  max-width: var(--max-width-mobile, 311px);
   width: 100%;
   margin: 0 auto;
 
@@ -12,7 +12,7 @@
   }
 
   @include media(">tablet") {
-    max-width: 573px;
+    max-width: var(--max-width-tablet, 573px);
 
     &.disableTablet {
       max-width: initial;
@@ -20,7 +20,7 @@
   }
 
   @include media(">desktop") {
-    max-width: 1110px;
+    max-width: var(--max-width-desktop, 1110px);
 
     &.disableDesktop {
       max-width: initial;
