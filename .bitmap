@@ -26,7 +26,7 @@
     "ui/container": {
         "name": "ui/container",
         "scope": "jkhanseong.devcomma-react-library",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "devcomma-react-library/ui/container"
     },
