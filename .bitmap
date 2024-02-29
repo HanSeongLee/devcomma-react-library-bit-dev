@@ -23,6 +23,13 @@
         "mainFile": "index.ts",
         "rootDir": "devcomma-react-library/responsive/breakpoints"
     },
+    "ui/button": {
+        "name": "ui/button",
+        "scope": "jkhanseong.devcomma-react-library",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "devcomma-react-library/ui/button"
+    },
     "ui/container": {
         "name": "ui/container",
         "scope": "jkhanseong.devcomma-react-library",
