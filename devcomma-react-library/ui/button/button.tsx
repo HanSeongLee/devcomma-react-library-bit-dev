@@ -1,13 +1,15 @@
-import type { ReactNode } from 'react';
+import type { ReactNode, HTMLAttributes } from 'react';
 
 export type ButtonProps = {
   children?: ReactNode;
-};
+} & HTMLAttributes<HTMLButtonElement>
 
-export function Button({ children }: ButtonProps) {
+export function Button({ children, ...props }: ButtonProps) {
   return (
-    <div>
-      {children}
-    </div>
+      <button type="submit"
+              {...props}
+      >
+        {children}
+      </button>
   );
 }
