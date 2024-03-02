@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactNode, HTMLAttributes, CSSProperties } from 'react';
 import cn from 'classnames';
 import styles from './style.module.scss';
 
@@ -14,10 +14,14 @@ export type ContainerProps = {
         desktop?: number;
     };
     className?: string;
+    style?: CSSProperties;
     children?: ReactNode;
-};
+} & HTMLAttributes<HTMLDivElement>
 
-export const Container = ({ disable, maxWidth, className, children }: ContainerProps) => {
+export const Container = ({
+                              disable, maxWidth, className, style,
+                              children, ...props
+                          }: ContainerProps) => {
     return (
         <div className={cn(styles.container, {
             [styles.disableMobile]: disable?.mobile,
@@ -28,7 +32,9 @@ export const Container = ({ disable, maxWidth, className, children }: ContainerP
                  '--max-width-mobile': maxWidth?.mobile ? `${maxWidth.mobile}px` : undefined,
                  '--max-width-tablet': maxWidth?.tablet ? `${maxWidth.tablet}px` : undefined,
                  '--max-width-desktop': maxWidth?.desktop ? `${maxWidth.desktop}px` : undefined,
-             } as React.CSSProperties}
+                 ...style,
+             } as CSSProperties}
+             {...props}
         >
             {children}
         </div>
