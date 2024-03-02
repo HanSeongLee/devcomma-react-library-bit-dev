@@ -1,6 +1,10 @@
 @import 'include-media';
 
-$breakpoints: (mobile: 568px, tablet: 767px, desktop: 1339px);
+$breakpoints: (
+        mobile: if(global-variable-exists('mobile-breakpoint'), #{data('mobile-breakpoint')}, 568px),
+        tablet: if(global-variable-exists('tablet-breakpoint'), #{data('tablet-breakpoint')}, 767px),
+        desktop: if(global-variable-exists('desktop-breakpoint'), #{data('desktop-breakpoint')}, 1339px)
+);
 $mobile: map-get($breakpoints, mobile);
 $tablet: map-get($breakpoints, tablet);
 $desktop: map-get($breakpoints, desktop);

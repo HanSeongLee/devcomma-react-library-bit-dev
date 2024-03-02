@@ -1,0 +1,35 @@
+---
+    description: A Context component
+    labels: ['context']
+    ---
+    
+    import { ResponsiveProvider } from './responsive-context-provider';
+    import { DisplayLanguage } from './responsive-context.composition';
+    
+    ## React Theme Context
+    
+    This is a simple [React Context](https://reactjs.org/docs/context.html) shared as a Bit component.
+    Use this component to share data between components without having to pass props down manually at every level.
+    
+    ### Component usage
+```tsx
+import React from 'react';
+import {
+  ResponsiveProvider,
+  useResponsive,
+} from '@org-name/scope-name.context.responsive';
+
+/* demo component */
+const DisplayLanguage = () => {
+  const { language } = useResponsive();
+  if (language === 'en') return Hi!;
+  return Hola!;
+};
+
+export const BasicUsage = () => {
+  return (
+    <ResponsiveProvider language="sp">
+    <DisplayLanguage />
+  </ResponsiveProvider>
+  );
+};
