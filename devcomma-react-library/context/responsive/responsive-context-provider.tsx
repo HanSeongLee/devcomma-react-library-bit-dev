@@ -9,7 +9,8 @@ export type ResponsiveProviderProps = {
 const ResponsiveContainer = ({ children }: { children: ReactNode }) => {
     const { responsive } = useResponsive();
     return (
-        <div id="responsive-container"
+        <div id='responsive-container'
+             data-testid='responsive-container'
              data-mobile-breakpoint={responsive?.breakpoints?.mobile}
              data-tablet-breakpoint={responsive?.breakpoints?.tablet}
              data-desktop-breakpoint={responsive?.breakpoints?.desktop}
