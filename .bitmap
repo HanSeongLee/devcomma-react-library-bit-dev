@@ -12,7 +12,7 @@
     "context/responsive": {
         "name": "context/responsive",
         "scope": "jkhanseong.devcomma-react-library",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "devcomma-react-library/context/responsive"
     },
@@ -40,9 +40,16 @@
     "ui/container": {
         "name": "ui/container",
         "scope": "jkhanseong.devcomma-react-library",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "devcomma-react-library/ui/container"
+    },
+    "ui/typography/title": {
+        "name": "ui/typography/title",
+        "scope": "jkhanseong.devcomma-react-library",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "devcomma-react-library/ui/typography/title"
     },
     "$schema-version": "17.0.0"
 }
