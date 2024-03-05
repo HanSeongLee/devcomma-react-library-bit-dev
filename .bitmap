@@ -47,7 +47,7 @@
     "ui/typography/title": {
         "name": "ui/typography/title",
         "scope": "jkhanseong.devcomma-react-library",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "devcomma-react-library/ui/typography/title"
     },

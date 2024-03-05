@@ -2,6 +2,6 @@ import { Title } from './title';
 
 export const BasicTitle = () => {
   return (
-    <Title>hello world!</Title>
+    <Title as='h1'>hello world!</Title>
   );
 }
